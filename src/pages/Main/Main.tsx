@@ -11,7 +11,7 @@ const Main: React.FC = () => {
 
   const dispatch = useAppDispatch()
 
-  const [showButton, setShowButton] = useState(true)
+  const [showButton, setShowButton] = useState<boolean>(true)
   // первичная загрузка карточек с сервера
   useEffect(() => {
     getCatdsAsync(dispatch)
