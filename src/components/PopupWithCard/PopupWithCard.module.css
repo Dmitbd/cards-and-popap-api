@@ -1,0 +1,201 @@
+.popupClosed {
+  font-family: 'Inter', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s, opacity 0.3s linear;
+}
+
+.popupOpened {
+  font-family: 'Inter', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s, opacity 0.3s linear;
+}
+
+.card {
+  width: 980px;
+  border: 1px solid #F1F1F1;
+  box-shadow: 0px 4px 10px 3px rgba(148, 148, 148, 0.25);
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.photo {
+  width: 100%;
+  height: 480px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.textContainer {
+  margin: 43px 33px 33px;
+  font-size: 21px;
+  padding: 0;
+}
+
+.textString {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.textString:last-child {
+  margin-bottom: 33px;
+}
+
+.textString:last-child {
+  margin-bottom: 15px;
+}
+
+.stringName {
+  color: #BDBDBD;
+  font-weight: bold;
+  width: 100px;
+  margin: 0;
+}
+
+.stringText {
+  color: #333333;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.stringText:last-child {
+  white-space: normal;
+}
+
+.closeButton {
+  background-color: #EB5757;
+  border-radius: 20px;
+  border: none;
+  width: 60px;
+  height: 60px;
+  transition: 0.3s;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+  border: 1px solid #333333;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1600px) {
+  .card {
+    width: 700px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .card {
+    width: 600px;
+  }
+  .textContainer {
+    margin: 30px;
+    font-size: 18px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 500px;
+  }
+  .textContainer {
+    font-size: 16px;
+    margin: 24px;
+  }
+  .photo {
+    height: 330px;
+  }
+  .closeButton {
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    right: -20px;
+    border-radius: 10px;
+  }
+  .iconClose {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .textContainer {
+    margin: 16px;
+    font-size: 18px;
+    padding: 0;
+  }
+  .textContainer {
+    font-size: 16px;
+  }
+  .stringName {
+    width: 70px;
+  }
+  .textString {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 400px;
+  }
+  .photo {
+    height: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 300px;
+  }
+  .photo {
+    height: 200px;
+  }
+  .closeButton {
+    width: 32px;
+    height: 32px;
+    top: -17px;
+    right: -17px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
+    width: 260px;
+  }
+  .closeButton {
+    top: -1px;
+    right: -1px;
+  }
+
+}
